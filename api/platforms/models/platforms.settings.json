@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "platforms",
+  "info": {
+    "name": "platforms"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "games": {
+      "via": "platforms",
+      "collection": "games"
+    },
+    "game_news": {
+      "via": "platforms",
+      "collection": "game-news"
+    }
+  }
+}
