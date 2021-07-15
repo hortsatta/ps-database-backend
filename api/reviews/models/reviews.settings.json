@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "Reviews",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "introduction": {
+      "type": "richtext"
+    },
+    "outroduction": {
+      "type": "richtext"
+    },
+    "gameplay": {
+      "type": "richtext"
+    },
+    "graphics": {
+      "type": "richtext"
+    },
+    "sound": {
+      "type": "richtext"
+    },
+    "presentation": {
+      "type": "richtext"
+    },
+    "tilt": {
+      "type": "richtext"
+    },
+    "gameplayScore": {
+      "type": "integer"
+    },
+    "graphicsScore": {
+      "type": "integer"
+    },
+    "soundScore": {
+      "type": "integer"
+    },
+    "presentationScore": {
+      "type": "integer"
+    },
+    "tiltScore": {
+      "type": "integer"
+    },
+    "totalScore": {
+      "type": "decimal"
+    },
+    "game": {
+      "model": "games",
+      "via": "reviews"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "reviews"
+    },
+    "coverImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

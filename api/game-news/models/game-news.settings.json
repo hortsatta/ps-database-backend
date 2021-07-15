@@ -43,8 +43,8 @@
       "via": "game_news"
     },
     "platforms": {
+      "via": "gameNews",
       "collection": "platforms",
-      "via": "game_news",
       "dominant": true
     }
   }

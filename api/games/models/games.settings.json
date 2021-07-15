@@ -56,14 +56,18 @@
       "type": "string"
     },
     "platforms": {
-      "collection": "platforms",
       "via": "games",
+      "collection": "platforms",
       "dominant": true
     },
     "user": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "games"
+    },
+    "reviews": {
+      "via": "game",
+      "collection": "reviews"
     }
   }
 }

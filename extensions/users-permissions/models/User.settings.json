@@ -66,6 +66,10 @@
     "game_news": {
       "via": "user",
       "collection": "game-news"
+    },
+    "reviews": {
+      "via": "user",
+      "collection": "reviews"
     }
   }
 }
