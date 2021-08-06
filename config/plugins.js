@@ -1,5 +1,4 @@
 module.exports = ({ env }) => ({
-  // ...
   upload: {
     provider: 'cloudinary',
     providerOptions: {
@@ -13,6 +12,8 @@ module.exports = ({ env }) => ({
       },
       delete: {},
     },
-  },
-  // ...
+    breakpoints: {
+      medium: 750
+    }
+  }
 });
