@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/modules",
+      "handler": "modules.all",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
