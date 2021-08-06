@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "richtext"
@@ -23,7 +24,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "required": false
     },
     "coverImage": {
       "model": "file",
@@ -50,10 +52,12 @@
       "pluginOptions": {}
     },
     "developer": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "publisher": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "platforms": {
       "via": "games",
