@@ -58,8 +58,8 @@
       "type": "decimal"
     },
     "game": {
-      "model": "games",
-      "via": "reviews"
+      "via": "reviews",
+      "model": "games"
     },
     "user": {
       "plugin": "users-permissions",
