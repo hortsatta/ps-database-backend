@@ -19,6 +19,13 @@ module.exports = {
         tooltip: 'Game Reviews',
         isMenuHidden: false,
       },
+      games: {
+        className: 'menu-games',
+        path: '/games',
+        label: 'Games',
+        tooltip: 'Games',
+        isMenuHidden: true,
+      },
       register: {
         className: 'menu-register',
         path: '/auth/register',
