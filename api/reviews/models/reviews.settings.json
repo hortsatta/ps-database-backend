@@ -12,31 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "excerpt": {
       "type": "string"
     },
-    "introduction": {
-      "type": "richtext"
-    },
-    "outroduction": {
-      "type": "richtext"
-    },
-    "gameplay": {
-      "type": "richtext"
-    },
-    "graphics": {
-      "type": "richtext"
-    },
-    "sound": {
-      "type": "richtext"
-    },
-    "presentation": {
-      "type": "richtext"
-    },
-    "tilt": {
+    "content": {
       "type": "richtext"
     },
     "gameplayScore": {
@@ -77,6 +56,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }
